@@ -1,0 +1,287 @@
+html{
+    background-color:rgb(204, 204, 204);
+    font-family: Arial; 
+}
+.option:hover{
+    color:#ad2929;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+/*cabeçalho*/
+.mainHeader nav{
+    background-color:rgb(73, 102, 80);
+    padding: 0px 250px 4px 250px;
+    margin-top: 0;
+    margin-left:4%; 
+    margin-right:4%;
+    position: fixed;
+    width: 92%;
+    text-align: center;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns:auto auto auto auto; 
+}
+.mainHeader nav a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight:bold;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    
+}
+.mainHeader nav a label{
+    font-size: 15px;
+}
+.mainHeader nav a:hover{
+    color:rgb(60, 255, 0);    
+}
+img.fotoHeader{
+    width: 30px;
+    margin-right:0px;
+    padding: 0px 5px 3px 0px;
+    filter: invert(100%); 
+}
+
+/*pagina principal*/
+.mainPage{
+    display: grid;
+    grid-template-columns: 300px auto 500px;
+}
+/*logo da estacio*/
+img#logo-estacio{
+    margin-top: 50px;
+    width: 230px;
+    padding: 20px 20px 50px 20px;
+}
+/*config menu de assuntos academicos*/
+.lista-menu-academico label{
+    background-color: rgb(34, 71, 46); 
+    color: white;
+    font-size: 20px;
+    border-bottom: solid 2px;
+    display: block;
+    padding: 10px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.lista-menu-academico label:hover{
+    background:orangered;
+}
+.lista-menu-academico ul li{
+    list-style: none;
+}
+/*animation control*/
+.lista-menu-academico ul{
+    background-color: rgb(56, 151, 36);
+    margin: 0%;
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+    transition: all .9s ease; 
+}
+div.lista-menu-academico input#ck-academico:checked ~ ul{
+    height: auto;
+    max-height: 200px;
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+    transition: all .9s ease;
+}
+/**/
+input.input-menu{
+    display: none;
+}
+.lista-menu-academico ul li a{
+    text-decoration: none;
+    color:white;
+    display: block;
+    padding: 15px 5px 15px 25px;
+}
+/**/
+div.lista-menu-academico input#ck-sala-virtual:checked ~ ul{
+    height: auto;
+    max-height: 200px;
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+    transition: all .9s ease;
+}
+/**/
+div.lista-menu-academico input#ck-financeiro:checked ~ ul{
+    height: auto;
+    max-height: 200px;
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+    transition: all .9s ease;
+}
+/**/
+div.lista-menu-academico input#ck-atividade-complementar:checked ~ ul{
+    height: auto;
+    max-height: 200px;
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+    transition: all .9s ease;
+}
+/**/
+div.lista-menu-academico input#ck-biblioteca:checked ~ ul{
+    height: auto;
+    max-height: 200px;
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+    transition: all .9s ease;
+}
+/**/
+div.lista-menu-academico input#ck-carreiras:checked ~ ul{
+    height: auto;
+    max-height: 200px;
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+    transition: all .9s ease;
+}
+/**/
+div.lista-menu-academico input#ck-beneficios:checked ~ ul{
+    height: auto;
+    max-height: 200px;
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+    transition: all .9s ease;
+}
+/*conteudo da pagina*/
+.conteudo{
+    margin-top:10%;
+}
+
+.adicionar-publicacao{
+    background: rgb(233, 233, 233);
+    margin:10px 50px 10px 50px;
+    padding: 2px 15px 3px 15px;
+    border:solid 1px #888;
+    border-radius: 5px;
+    max-width: 85%;
+    max-height: 85%;
+}
+textarea#tb-add-publicacao{
+    margin:1px 0px 1px 0px;
+    resize: none;
+    border-radius: 3px;
+    background: rgb(247, 247, 247);
+}
+p.normal-text{
+    padding: 0;
+    margin: 5px 0px 0px 0px;
+}
+#bt-publicar{
+    margin: 2px 2px 2px 400px;
+    padding: 2px 15px 2px 15px;
+    border-radius: 3px;
+    border-style: solid;
+    background-color: rgb(172, 172, 172); 
+    border-color: rgb(224, 224, 224);
+}
+/**/
+#img-usuario{
+    width: 100px;
+    border-radius: 100%;
+    border:4px rgb(51, 126, 85) solid;
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+    transition: all .9s ease;     
+}
+#img-usuario:hover{
+    border:4px rgb(0, 255, 115) solid;
+}
+.menuPerfil{
+    position: fixed;
+    margin: 5% 0% 0px 80%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background: rgb(240, 240, 240);
+    border:solid 1px #999;
+     
+}
+a#bt-usuario{
+    font-size: 24px;
+    font-weight: bold;
+    color:rgb(51, 126, 85) solid;
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+    transition: all .9s ease;  
+}
+a#bt-usuario:hover{
+    color: rgb(0, 255, 115);
+}
+/**/
+.menuPerfil nav{
+    margin-top: 40px;
+
+}
+.menuPerfil nav ul li{
+    list-style: none;
+    margin-top: 15px;
+    margin-right: 40px;
+    font-size: 14px;
+}
+.menuPerfil nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease; 
+}
+.menuPerfil nav ul li a:hover{
+    color:rgb(255, 0, 0);
+}
+/*publicação de usuario*/
+.publicacoes-adicionadas{
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 3px; 
+}
+.img-publicacao-usuario{
+    width: 50px;
+    border-radius: 100%;
+    border: solid 2px rgb(124, 124, 124);
+    padding: 0;
+    margin: 1px;
+}
+p.publica-estacio{
+    display: grid;
+    grid-template-columns: 60px auto;
+}
+.nome-usuario-publicador{
+    margin-top: 20px;
+    padding: 0;
+}
+
+fieldset{
+    border:1px solid rgb(189, 189, 189);
+    border-radius: 5px;
+    padding: 5px;
+    background: rgb(240, 240, 240);
+    margin-top: 10px;    
+}
+/**/
+footer, footer p a{
+    background: rgb(3, 0, 160);
+    color: white;
+    text-align: center;
+}

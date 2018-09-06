@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estácio Sia</title>
+    <link rel="icon" href="img/estacio.png">    
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!---->
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="thepage">
+        <div class="mainHeader">
+            <header>
+                <nav>
+                    <a href="index.html" id="headerOption-pagina-inicial"><img src="img/cabeçalho/icons8-página-inicial-50.png" alt="inicio" class="fotoHeader"><label for="headerOption-pagina-inicial"><br>Página Inicial</label></a>
+                    <a href="index.html" id="headerOption-game-center"><img src="img/cabeçalho/icons8-game-controller-filled-50.png" alt="game" class="fotoHeader"><label for="headerOption-pagina-inicial"><br>Game Center</label></a>
+                    <a href="index.html" id="headerOption-contato"><img src="img/cabeçalho/contatos.png" alt="contato" class="fotoHeader"><label for="headerOption-pagina-inicial"><br>Contatos</label></a>
+                    <a href="index.html" id="headerOption-atendimento-virtual"><img src="img/cabeçalho/mensagem.png" alt="atendimento" class="fotoHeader"><label for="headerOption-pagina-inicial"><br>Atendimento Virtual</label></a>
+                </nav>
+            </header>
+        </div>
+        <div class="mainPage">
+            <div class="menuAcademico">
+                <img src="img/Logos.png" alt="logo-estacio" id="logo-estacio">
+                <nav>
+                    <div class="lista-menu-academico">
+                        <input type="checkbox" class="input-menu" id="ck-academico">
+                        <label for="ck-academico">Acadêmico</label>
+                        <ul>
+                            <li><a class="sublista-menu-academico option" href="">Disciplinas Matriculadas</a></li>
+                            <li><a class="sublista-menu-academico option" href="">Frequencia</a></li>
+                            <li><a class="sublista-menu-academico option" href="">Horário de Aulas</a></li>
+                            <li><a class="sublista-menu-academico option" href="">Provas</a></li>
+                        </ul>
+                    </div>
+                    <div class="lista-menu-academico">
+                            <input type="checkbox" class="input-menu" id="ck-sala-virtual">
+                            <label for="ck-sala-virtual">Sala de Aula Virtual</label>
+                            <ul>
+                                <li><a class="sublista-menu-academico option" href="">Programação II</a></li>
+                                <li><a class="sublista-menu-academico option" href="">Tecn. para internet II</a></li>
+                                <li><a class="sublista-menu-academico option" href="">Estrutura de Dados</a></li>
+                                <li><a class="sublista-menu-academico option" href="">Publicidade e Multimeios</a></li>
+                            </ul>
+                    </div>
+                    <div class="lista-menu-academico">
+                            <input type="checkbox" class="input-menu" id="ck-financeiro">
+                            <label for="ck-financeiro">Financeiro</label>
+                            <ul>
+                                <li><a class="sublista-menu-academico option" href="">Informações Financeiras</a></li>
+                                <li><a class="sublista-menu-academico option" href="">Débito automático</a></li>
+                                <li><a class="sublista-menu-academico option" href="">Proposta de Negociação</a></li>
+                                <li><a class="sublista-menu-academico option" href="">Fies</a></li>
+                            </ul>
+                    </div>
+                    <div class="lista-menu-academico">
+                            <input type="checkbox" class="input-menu" id="ck-atividade-complementar">
+                            <label for="ck-atividade-complementar">Atividades Complementares</label>
+                            <ul>
+                                <li><a class="sublista-menu-academico option" href="">Inscrição</a></li>
+                                <li><a class="sublista-menu-academico option" href="">Agenda de Atividades</a></li>
+                                <li><a class="sublista-menu-academico option" href="">Regulamento AAC</a></li>
+
+
+                            </ul>
+                    </div>
+                    <div class="lista-menu-academico">
+                            <input type="checkbox" class="input-menu" id="ck-biblioteca">
+                            <label for="ck-biblioteca">Biblioteca</label>
+                            <ul>
+                                <li><a class="sublista-menu-academico option" href="">Biblioteca Virtual</a></li>
+                                <li><a class="sublista-menu-academico option" href="">Consultar Acervo</a></li>
+                            </ul>
+                    </div>
+                    <div class="lista-menu-academico">
+                            <input type="checkbox" class="input-menu" id="ck-carreiras">
+                            <label for="ck-carreiras">Estácio Carreiras</label>
+                            <ul>
+                                <li><a class="sublista-menu-academico option" href="">Portal de Vagas</a></li>
+                                <li><a class="sublista-menu-academico option" href="">Matrícular Estágio</a></li>
+                            </ul>
+                    </div>
+                    <div class="lista-menu-academico">
+                            <input type="checkbox" class="input-menu" id="ck-beneficios">
+                            <label for="ck-beneficios">Beneficios</label>
+                            <ul>
+                                <li><a class="sublista-menu-academico option" href="">Clube do Aluno</a></li>
+                            </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="conteudo">
+                <div class="adicionar-publicacao">
+                    <form>
+                        <label  for="tb-add-publicacao"><p class="normal-text">Crie uma Publicação:</p></label>
+                        <textarea name="cpublicacao" id="tb-add-publicacao" cols="60" rows="5" ></textarea>
+                        <input type="button" id="bt-publicar" value="publicar" onclick="publicar()"/> 
+                    </form>
+                </div>
+                <div class="publicacoes-adicionadas">
+                    <fieldset>
+                            <div class="publicacao">
+                                <fieldset class="nome-usuario-publicacao">
+                                    <p class="publica-estacio">
+                                        <img class="img-publicacao-usuario" src="img/estacio.png" alt="">
+                                        <label class="nome-usuario-publicador">Estácio</label>
+                                    </p>
+                                </fieldset>
+                                <p>Professor(a) Ricardo Eiji Condo da matéria de Estrutura de Dados postou um novo material de Estudos <br>Nome do Arquivo: aula-07.pdf</p>
+                                <button id="bt_publicar">Abrir Arquivo</button>
+                            </div>
+                    </fieldset>
+                    <fieldset>
+                            <div class="publicacao">
+                                <fieldset class="nome-usuario-publicacao">
+                                    <p class="publica-estacio">
+                                        <img class="img-publicacao-usuario" src="img/estacio.png" alt="">
+                                        <label class="nome-usuario-publicador">Estácio</label>
+                                    </p>
+                                </fieldset>
+                                <p>Professor(a) Ricardo Eiji Condo da matéria de Estrutura de Dados postou um novo material de Estudos <br>Nome do Arquivo: aula-06.pdf</p>
+                                <button>Abrir Arquivo</button>
+                            </div>
+                    </fieldset>
+                    <fieldset>
+                            <div class="publicacao">
+                                <fieldset class="nome-usuario-publicacao">
+                                    <p class="publica-estacio">
+                                        <img class="img-publicacao-usuario" src="img/estacio.png" alt="">
+                                        <label class="nome-usuario-publicador">Estácio</label>
+                                    </p>
+                                </fieldset>
+                                <p>Professor(a) Ricardo Eiji Condo da matéria de Estrutura de Dados postou um novo material de Estudos <br>Nome do Arquivo: aula-05.pdf</p>
+                                <button>Abrir Arquivo</button>
+                            </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="menuPerfil">
+                <img id="img-usuario" src="img/perfil/perfil.jpg" alt="foto de usuario"><br>
+                <label for="img-usuario"><a id="bt-usuario">Josias Souza</a></label>
+                <nav>
+                    <ul>
+                        <li><a href="">Amigos</a></li>
+                        <li><a href="">Mensagens</a></li>
+                        <li><a href="">Notificações</a></li>
+                        <li><a href="">Configurações</a></li>
+                        <li><a href="">Sair</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <footer><p><a id="footer" href="">&copy;Josias Nascimento Souza e Souza</a></p></footer>
+</body>
+</html>
